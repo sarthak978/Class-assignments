@@ -20,3 +20,26 @@ def max_marks():
     print("The maximum marks scored are",max(marks),"by student",marks.index(max(marks)))
 
 max_marks()
+
+#%%
+def myfunc(st):
+    str=''
+    for index, l in enumerate(st):
+        if index % 2 == 0:
+            str+=l.upper()
+        else:
+            str+=l.lower()
+    return str
+
+print(myfunc(input("Enter string: ")))
+
+#%%
+def words():
+    word1, word2 = input("Enter 2 words: ").strip().split()
+    if word1[0].upper() == word2[0].upper():
+        return True
+    else:
+        return False
+
+result = words()
+print(result)
