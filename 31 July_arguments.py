@@ -44,8 +44,8 @@ def with_sums(num1, num2):
 
 num1 = int(input("Enter lower limit: "))
 num2 = int(input("Enter upper limit: "))
-result = with_sums(num1,num2)
-print(f"\nSum of numbers from {num1} to {num2} is: {result}")
+result = with_sums(num2,num1)
+print(f"\nSum of numbers is: {result}")
 
 #%%
 def kw_sums(int_1, int_2):
@@ -56,7 +56,7 @@ def kw_sums(int_1, int_2):
 
 num1 = int(input("Enter lower limit: "))
 num2 = int(input("Enter upper limit: "))
-result = kw_sums(num1,num2)
+result = kw_sums(int_2=num2,int_1=num1)
 print(f"\nSum of numbers from {num1} to {num2} is: {result}")
 
 #%%
